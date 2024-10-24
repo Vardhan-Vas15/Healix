@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login/Signup - Healthcare Accessibility</title>
+    <style>
+        /* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #007bff;
+    padding: 1rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .nav-links a:hover {
+    color: #ddd;
+}
+
+/* Auth Section Styling */
+.auth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 2rem;
+}
+
+.auth-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.auth-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.auth-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.auth-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.auth-card {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.auth-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+.auth-card .btn {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.auth-card .btn-primary {
+    background-color: #0056b3;
+}
+
+.auth-card .btn:hover {
+    background-color: #0056b3;
+}
+
+.auth-card .btn-primary:hover {
+    background-color: #003d80;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Healthcare Accessibility</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2>Welcome to Healthcare Accessibility</h2>
+            <p>Login or Sign up as a User or Doctor to continue:</p>
+
+            <div class="auth-cards">
+                <div class="auth-card">
+                    <h3>User (Patient)</h3>
+                    <a href="user-login.html" class="btn btn-primary">Login</a>
+                    <a href="user-signup.html" class="btn">Sign Up</a>
+                </div>
+                <div class="auth-card">
+                    <h3>Doctor</h3>
+                    <a href="doctor-login.html" class="btn btn-primary">Login</a>
+                    <a href="doctor-signup.html" class="btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
